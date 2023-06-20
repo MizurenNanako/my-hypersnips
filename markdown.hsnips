@@ -186,7 +186,7 @@ snippet `(\\?[a-zA-Z]\w*({?\w*})?)(bm|BM)` "mathbm" iAm
 \bm{``rv = m[1]``}
 endsnippet
 
-snippet `;1bm ` "1bm" iAm
+snippet `;1 ` "1bm" iAm
 \bm{1}
 endsnippet
 
@@ -307,6 +307,10 @@ endsnippet
 
 snippet ... "cdots" iAm
 \cdots
+endsnippet
+
+snippet `;diamond ` "hokje" iA
+\diamond
 endsnippet
 
 # +... -> , \cdots
@@ -681,13 +685,13 @@ endsnippet
 
 # ==== Static Matrix ====
 
-snippet `;pmat ` "pmat" iAm
+snippet `;pmat ` "pmat" wm
 \begin{pmatrix}
     ${1: }
 \end{pmatrix}$0
 endsnippet
 
-snippet `;bmat ` "bmat" iAm
+snippet `;bmat ` "pmat" wm
 \begin{bmatrix}
     $1
 \end{bmatrix}$0
@@ -771,9 +775,14 @@ snippet `;style ` "create my style block"
 </style>
 endsnippet
 
-snippet `;ruby ` "create html ruby" wA
+snippet `;ruby ` "create html ruby"
 <ruby>${1:${VISUAL}}<rt>$2</rt></ruby>${0}
 endsnippet
+
+snippet `;center ` "create html centered div"
+<div class=``rv = '"center"'``>
+	${1}
+</div>${0}
 
 snippet `;quote ` "create html blockquote" wA
 <blockquote>
