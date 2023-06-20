@@ -273,7 +273,15 @@ snippet `;alp` "\alpha" iAmm
 \alpha
 endsnippet
 
-snippet `;ve` "\varepsilon" iAmm
+snippet `;vphi` "\varphi" iAmm
+\varphi
+endsnippet
+
+snippet `;Vphi` "\varPhi" iAmm
+\varPhi
+endsnippet
+
+snippet `;veps` "\varepsilon" iAmm
 \varepsilon
 endsnippet
 
@@ -285,12 +293,20 @@ snippet `;ome` "\omega" iAmm
 \omega
 endsnippet
 
-snippet ... "cdots" iAm
-\cdots
+snippet `;Veps` "\varEpsilon" iAmm
+\varEpsilon
 endsnippet
 
-snippet `;diamond ` "hokje" iA
-\diamond
+snippet `;Eps` "\Epsilon" iAmm
+\Epsilon
+endsnippet
+
+snippet `;Ome` "\Omega" iAmm
+\Omega
+endsnippet
+
+snippet ... "cdots" iAm
+\cdots
 endsnippet
 
 # +... -> , \cdots
@@ -315,6 +331,10 @@ endsnippet
 
 snippet `;S` "int" iAm
 \int
+endsnippet
+
+snippet `;v ` "vector" iAm
+\vec{$1}$0
 endsnippet
 
 snippet `;\.` "dot multiply" iAm
@@ -342,7 +362,7 @@ snippet `;(sin|cos|arccot|cot|csc|ln|exp|det|perp|arcsin|arccos|arctan|arccot|ar
 \\``rv = m[1]``
 endsnippet
 
-snippet `;(xi|mu|alpha|sigma|rho|beta|gamma|delta|pi|zeta|eta|varepsilon|theta|iota|kappa|vartheta|lambda|nu|pi|rho|tau|upsilon|varphi|phi|vphi|chi|psi|omega|Gamma|Delta|Theta|Lambda|Xi|Pi|Sigma|Upsilon|Phi|Psi|Omega)` "greek" iAm
+snippet `;(xi|mu|alpha|sigma|rho|beta|gamma|delta|pi|zeta|eta|varepsilon|theta|iota|kappa|vartheta|lambda|nu|pi|rho|tau|upsilon|varphi|phi|chi|psi|omega|Gamma|Delta|Theta|Lambda|Xi|Pi|Sigma|Upsilon|Phi|Psi|Omega)` "greek" iAm
 \\``rv = m[1]``
 endsnippet
 
@@ -661,13 +681,13 @@ endsnippet
 
 # ==== Static Matrix ====
 
-snippet `;pmat ` "pmat" wm
+snippet `;pmat ` "pmat" iAm
 \begin{pmatrix}
     ${1: }
 \end{pmatrix}$0
 endsnippet
 
-snippet `;bmat ` "pmat" wm
+snippet `;bmat ` "bmat" iAm
 \begin{bmatrix}
     $1
 \end{bmatrix}$0
@@ -751,12 +771,32 @@ snippet `;style ` "create my style block"
 </style>
 endsnippet
 
-snippet `;ruby ` "create html ruby"
+snippet `;ruby ` "create html ruby" wA
 <ruby>${1:${VISUAL}}<rt>$2</rt></ruby>${0}
 endsnippet
 
-snippet `;center ` "create html centered div"
-<div class=``rv = '"center"'``>
-	${1}
+snippet `;quote ` "create html blockquote" wA
+<blockquote>
+
+${1:${VISUAL}}
+
+</blockquote>$0
+endsnippet
+
+snippet `;hhh` "create html tags" iA
+<$1>
+${2:${VISUAL}}
+</$1>$0
+endsnippet
+
+snippet `;center ` "create html centered div" wA
+<div class=``rv='"center"'``>
+
+${1:${VISUAL}}
+
 </div>${0}
+endsnippet
+
+snippet `;pb ` "pagebreak with html div" iA
+``rv='<div style="page-break-after: always;"></div>'``
 endsnippet
