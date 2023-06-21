@@ -273,6 +273,10 @@ snippet `;alp` "\alpha" iAmm
 \alpha
 endsnippet
 
+snippet `;del` "\delta" iAmm
+\delta
+endsnippet
+
 snippet `;vphi` "\varphi" iAmm
 \varphi
 endsnippet
@@ -281,11 +285,11 @@ snippet `;Vphi` "\varPhi" iAmm
 \varPhi
 endsnippet
 
-snippet `;veps` "\varepsilon" iAmm
+snippet `;vep` "\varepsilon" iAmm
 \varepsilon
 endsnippet
 
-snippet `;eps` "\epsilon" iAmm
+snippet `;ep` "\epsilon" iAmm
 \epsilon
 endsnippet
 
@@ -303,6 +307,10 @@ endsnippet
 
 snippet `;Ome` "\Omega" iAmm
 \Omega
+endsnippet
+
+snippet `\$\$\$\$` "math" iA
+\$\$${0}\$\$
 endsnippet
 
 snippet ... "cdots" iAm
@@ -559,6 +567,11 @@ snippet `;\| ` "left| right|" Aim
 endsnippet
 
 priority 100
+snippet `;\\ ` "left. right|" Aim
+\left. ${1} \right|$0
+endsnippet
+
+priority 100
 snippet `;\{ ` "left\{ right\}" Aim
 \left\\{ ${1} \right\\}$0
 endsnippet
@@ -569,7 +582,7 @@ snippet `;\[ ` "left[ right]" Aim
 endsnippet
 
 priority 100
-snippet `;< ` "leftangle rightangle" iAm
+snippet `;, ` "leftangle rightangle" iAm
 \left<${1} \right>$0
 endsnippet
 
@@ -633,11 +646,11 @@ snippet `;taylor ` "taylor" iAm
 \sum_{${1:k}=${2:0}}^{${3:\infty}} ${4:c_$1} (x-a)^$1$0
 endsnippet
 
-snippet `(?<!\\)lim` "limit" iAm
+snippet `;lim` "limit" iAm
 \lim_{${1:n} \to ${2:\infty}}
 endsnippet
 
-snippet `(?<!\\)prod` "product" iAm
+snippet `;prod` "product" iAm
 \prod_{${1:n=${2:1}}}^{${3:\infty}} ${4:${VISUAL}}$0
 endsnippet
 
@@ -783,6 +796,7 @@ snippet `;center ` "create html centered div"
 <div class=``rv = '"center"'``>
 	${1}
 </div>${0}
+endsnippet
 
 snippet `;quote ` "create html blockquote" wA
 <blockquote>
