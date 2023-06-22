@@ -45,21 +45,6 @@ endsnippet
 # == Hat Operation ==
 
 # ==== Auto Capture Hat Operation ====
-snippet `(\\?[a-zA-Z]\w*({?\w*})?)(hbar|BAR)` "Bar" iAm
-\overline{``rv = m[1] + m[2] + m[3]``}
-endsnippet
-
-snippet `(\\?[a-zA-Z]\w*({?\w*})?)(htd|TD)` "tilde" iAm
-\tilde{``rv = m[1]``}
-endsnippet
-
-snippet `(\\?[a-zA-Z]\w*({?\w*})?)bar` "bar" iAm
-\bar{``rv = m[1]``}
-endsnippet
-
-snippet `(\\?[a-zA-Z]\w*({?\w*})?)(hat|HAT)` "hat" iAm
-\hat{``rv = m[1]``}
-endsnippet
 
 snippet `(\\?[a-zA-Z]\w*({?\w*})?)(hvec)` "Vector postfix" iAm
 \vec{``rv = m[1]``}
@@ -67,10 +52,6 @@ endsnippet
 
 snippet `(\\?[a-zA-Z]\w*({?\w*})?)(rta)` "Vector postfix" iAm
 \overrightarrow{``rv = m[1]``}
-endsnippet
-
-snippet `(\\?[a-zA-Z]\w*({?\w*})?)(hdot)` "dot" iAm
-\dot{``rv = m[1]``}
 endsnippet
 
 snippet `(\\?[a-zA-Z]\w*({?\w*})?)(hddot)` "ddot" iAm
@@ -150,30 +131,6 @@ snippet `;T ` "R" iAm
 ^{\mathrm{T}}
 endsnippet
 
-snippet `;R ` "R" iAm
-\mathbb{R}
-endsnippet
-
-snippet `;N ` "N" iAm
-\mathbb{N}
-endsnippet
-
-snippet `;Z ` "Z" iAm
-\mathbb{Z}
-endsnippet
-
-snippet `;Z ` "Z" iAm
-\mathbb{Z}
-endsnippet
-
-snippet `;Q ` "Q" iAm
-\mathbb{Q}
-endsnippet
-
-snippet `;C ` "C" iAm
-\mathbb{C}
-endsnippet
-
 # ==== Dynamic Operation ====
 
 priority 100
@@ -241,6 +198,14 @@ snippet `;nab` "\nabla" iAmm
 \nabla
 endsnippet
 
+snippet `;=` "&=" iAmm
+&=
+endsnippet
+
+snippet `;pl` "plank" iAmm
+\hbar
+endsnippet
+
 snippet `;div` "\nabla\cdot" iAmm
 \nabla\cdot
 endsnippet
@@ -277,11 +242,15 @@ snippet `;del` "\delta" iAmm
 \delta
 endsnippet
 
-snippet `;vphi` "\varphi" iAmm
+snippet `;D` "\Delta" iAmm
+\Delta
+endsnippet
+
+snippet `;vphi|;5` "\varphi" iAmm
 \varphi
 endsnippet
 
-snippet `;Vphi` "\varPhi" iAmm
+snippet `;vPhi` "\varPhi" iAmm
 \varPhi
 endsnippet
 
@@ -338,7 +307,7 @@ snippet `(?<=,)(\s*)\.\.\.` "smart ldots" imA
 endsnippet
 
 snippet `;'` "dot" iAm
-\dot
+\dot{$1}$0
 endsnippet
 
 snippet `;S` "int" iAm
@@ -470,11 +439,11 @@ endsnippet
 
 # ==== Compare Symbol ====
 
-snippet `;\\;` "setminus" iAm
+snippet `;\\ ` "setminus" iAm
 \setminus$0
 endsnippet
 
-snippet `;>=;` "greater than" iAm
+snippet `;>= ` "greater than" iAm
 \ge$0
 endsnippet
 
@@ -482,15 +451,15 @@ snippet `;dis ` "displaystyle" iAm
 \displaystyle$0
 endsnippet
 
-snippet `;<=;` "less than" iAm
+snippet `;<= ` "less than" iAm
 \le$0
 endsnippet
 
-snippet `;!=;` "no equals" iAm
+snippet `;!= ` "no equals" iAm
 \neq$0
 endsnippet
 
-snippet `;==;` " constan equals" iAm
+snippet `;== ` " constan equals" iAm
 \equiv$0
 endsnippet
 
@@ -498,20 +467,20 @@ snippet `;sim ` " sim" iAm
 \sim$0
 endsnippet
 
-snippet `;~~;` " Amppro equals" iAm
+snippet `;~~ ` " Amppro equals" iAm
 \thickapprox$0
 endsnippet
 
-snippet `;~=;` " Amppro equals2" iAm
+snippet `;~= ` " Amppro equals2" iAm
 \cong$0
 endsnippet
 
-snippet `;>>;` ">>" iAm
+snippet `;>> ` ">>" iAm
 \gg$0
 endsnippet
 
 
-snippet `;<<;` "<<" iAm
+snippet `;<< ` "<<" iAm
 \ll$0
 endsnippet
 
