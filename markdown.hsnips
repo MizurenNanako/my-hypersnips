@@ -187,6 +187,12 @@ snippet `(\\?[a-zA-Z]\w*({?\w*})?)bb` iAm
 \mathbb{``rv = m[1]``}$0
 endsnippet
 
+# == toUpperCase ==
+
+priority 100
+snippet `([a-z]+);;` "to uppercase" iAmm
+``rv = m[1].toUpperCase()``
+endsnippet
 
 # == Auto Symbol ==
 
@@ -198,8 +204,12 @@ snippet `;nab` "\nabla" iAmm
 \nabla
 endsnippet
 
-snippet `;=` "&=" iAmm
-&=
+snippet `( )?-=` "&=" iAmm
+``rv = m[1]?m[1]:''``&= 
+endsnippet
+
+snippet `( )?--` "&" iAmm
+``rv = m[1]?m[1]:''``& 
 endsnippet
 
 snippet `;pl` "plank" iAmm
@@ -348,8 +358,13 @@ snippet `;(xi|mu|alpha|sigma|rho|beta|gamma|delta|pi|zeta|eta|varepsilon|theta|i
 endsnippet
 
 # ==== Space Symbol ====
-snippet `;(?<!\\)(quad)` "ln" iAm
-\\``rv = m[1]``
+
+snippet `;qq ` "quad" iAm
+\quad 
+endsnippet
+
+snippet `\qqq ` "qquad" iAm
+\qquad 
 endsnippet
 
 # ==== Logic Symbol ====
@@ -662,6 +677,9 @@ snippet `;defe ` "define equal" iAm
 \overset{\underset{\mathrm{def}}{}}{=}
 endsnippet
 
+snippet `;=== ` "define equal" iAm
+\xlongequal{$1\}$0
+endsnippet
 
 # == Matrix ==
 
