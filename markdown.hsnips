@@ -748,7 +748,7 @@ snippet \box "Box"
 ``rv = '└' + '─'.repeat(t[0].length + 2) + '┘'``
 endsnippet
 
-snippet `;style ` "create my style block"
+snippet `;style ` "create my style block" iA
 <style>
     p{text-indent:2em;}
     ruby{font-weight: bold;}
@@ -757,11 +757,11 @@ snippet `;style ` "create my style block"
 </style>
 endsnippet
 
-snippet `;ruby ` "create html ruby"
+snippet `;ruby ` "create html ruby" iA
 <ruby>${1:${VISUAL}}<rt>$2</rt></ruby>${0}
 endsnippet
 
-snippet `;center ` "create html centered div"
+snippet `;center ` "create html centered div" iA
 <div class=``rv = '"center"'``>
 	${1}
 </div>${0}
