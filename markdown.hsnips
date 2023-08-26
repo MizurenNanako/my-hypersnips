@@ -793,10 +793,8 @@ ${1:${VISUAL}}
 </blockquote>$0
 endsnippet
 
-snippet `;hhh` "create html tags" iA
-<$1>
-${2:${VISUAL}}
-</$1>$0
+snippet `;;` "create html tags" iA
+<$1>${2:${VISUAL}}</$1>$0
 endsnippet
 
 snippet `;center ` "create html centered div" wA
