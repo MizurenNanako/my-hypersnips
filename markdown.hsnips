@@ -328,6 +328,18 @@ snippet `;v ` "vector" iAm
 \vec{$1}$0
 endsnippet
 
+snippet `;k ` "vector" iAm
+\ket{$1}$0
+endsnippet
+
+snippet `;b ` "vector" iAm
+\bra{$1}$0
+endsnippet
+
+snippet `;bk ` "vector" iAm
+\braket{$1|$2}$0
+endsnippet
+
 snippet `;\.` "dot multiply" iAm
 \cdot
 endsnippet
@@ -385,6 +397,10 @@ endsnippet
 
 snippet `;-> ` "to" iAm
 \to
+endsnippet
+
+snippet `;get ` "from" iAm
+\leftarrow
 endsnippet
 
 priority 200
