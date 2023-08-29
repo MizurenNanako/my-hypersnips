@@ -340,6 +340,14 @@ snippet `;bk ` "vector" iAm
 \braket{$1|$2}$0
 endsnippet
 
+snippet `;b[bk]k ` "vector" iAm
+\braket{$1|$2|$3}$0
+endsnippet
+
+snippet `;dag` "vector" iAm
+^{\dagger}
+endsnippet
+
 snippet `;\.` "dot multiply" iAm
 \cdot
 endsnippet
