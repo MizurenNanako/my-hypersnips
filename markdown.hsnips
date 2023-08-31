@@ -768,17 +768,17 @@ snippet `;(b|p|v)mat([1-9]) ` "bmatrix" iiAm
 endsnippet
 
 priority 300
-snippet `;hvec([1-9]) ` "col vector" iiAm
-\\begin{pmatrix}``
+snippet `;cvec([1-9]) ` "col vector" iiAm
+\\begin{bmatrix}``
     rv = gen_matrix(m[1], 1);
-``\\end{pmatrix}$0
+``\\end{bmatrix}$0
 endsnippet
 
 priority 300
-snippet `;vvec([1-9]) ` "row vector" iiAm
-\\begin{pmatrix}``
+snippet `;rvec([1-9]) ` "row vector" iiAm
+\\begin{bmatrix}``
     rv = gen_matrix(1, m[1]);
-``\\end{pmatrix}$0
+``\\end{bmatrix}$0
 endsnippet
 
 
