@@ -353,7 +353,7 @@ snippet `;\.` "dot multiply" iAm
 endsnippet
 
 priority 101
-snippet `;\*` "cross" iAm
+snippet `;x` "cross" iAm
 \times
 endsnippet
 
