@@ -276,6 +276,10 @@ snippet `;ome` "\omega" iAmm
 \omega
 endsnippet
 
+snippet `;lam` "\lambda" iAmm
+\lambda
+endsnippet
+
 snippet `;Veps` "\varEpsilon" iAmm
 \varEpsilon
 endsnippet
