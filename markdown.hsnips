@@ -236,6 +236,10 @@ snippet `;6` "\rho" iAmm
 \rho
 endsnippet
 
+snippet `;7` "\sigma" iAmm
+\sigma
+endsnippet
+
 snippet `;pp` "\partial" iAmm
 \partial
 endsnippet
@@ -326,6 +330,10 @@ endsnippet
 
 snippet `;S` "int" iAm
 \int
+endsnippet
+
+snippet `;\*` "star" iAm
+\star
 endsnippet
 
 snippet `;v ` "vector" iAm
