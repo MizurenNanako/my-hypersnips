@@ -427,6 +427,10 @@ snippet `;get ` "from" iAm
 \leftarrow
 endsnippet
 
+snippet `;<-> ` "<->" iAm
+\\leftrightarrow
+endsnippet
+
 priority 200
 snippet `;(?<=\b|\d+)(?<!\\)(cap|cup|land|lor|lnot|oplus|ominus|otimes|sqcap|sqcup|vdash|models) ` "logic operator" iAm
 \\``rv = m[1]`` ${0}
