@@ -38,7 +38,7 @@ snippet `((\d+)|(\d*)(\\)?([A-Za-z!]+)((\^|_)(\{\d+\}|\d))*)/` "Fraction no ()" 
 endsnippet
 
 priority 200
-snippet `(?<=\s)(\\mu|\\alpha|\\sigma|\\rho|\\beta|\\gamma|\\delta|\\zeta|\\eta|\\varepsilon|\\theta|\\iota|\\kappa|\\vartheta|\\lambda|\\nu|\\pi|\\rho|\\tau|\\upsilon|\\phi|\\chi|\\psi|\\omega|\\Gamma|\\Delta|\\Theta|\\Lambda|\\Xi|\\Pi|\\Sigma|\\Upsilon|\\Phi|\\Psi|\\Omega|[A-Za-z]{1,2})?(_[A-Za-z0-9]|_\{[^}]+\})?(\^[A-Za-z0-9]|\^\{[^}]+\})?(_[A-Za-z0-9]|_\{[^}]+\})?(\([^)]+\))(_[A-Za-z0-9]|_\{[^}]+\})?(\^[A-Za-z0-9]|\^\{[^}]+\})?(_[A-Za-z0-9]|_\{[^}]+\})?\/` "Fraction with ()" iAm
+snippet `(?<=\s)(\\alef|\\mu|\\alpha|\\sigma|\\rho|\\beta|\\gamma|\\delta|\\zeta|\\eta|\\varepsilon|\\theta|\\iota|\\kappa|\\vartheta|\\lambda|\\nu|\\pi|\\rho|\\tau|\\upsilon|\\phi|\\chi|\\psi|\\omega|\\Gamma|\\Delta|\\Theta|\\Lambda|\\Xi|\\Pi|\\Sigma|\\Upsilon|\\Phi|\\Psi|\\Omega|[A-Za-z]{1,2})?(_[A-Za-z0-9]|_\{[^}]+\})?(\^[A-Za-z0-9]|\^\{[^}]+\})?(_[A-Za-z0-9]|_\{[^}]+\})?(\([^)]+\))(_[A-Za-z0-9]|_\{[^}]+\})?(\^[A-Za-z0-9]|\^\{[^}]+\})?(_[A-Za-z0-9]|_\{[^}]+\})?\/` "Fraction with ()" iAm
 ``rv = "\\frac{" + m.slice(1, m.length).join('') + "}{$1}$2"``
 endsnippet
 
@@ -389,7 +389,7 @@ snippet `;(sin|cos|arccot|cot|csc|ln|exp|det|perp|arcsin|arccos|arctan|arccot|ar
 \\``rv = m[1]``
 endsnippet
 
-snippet `;(xi|mu|alpha|sigma|rho|beta|gamma|delta|pi|zeta|eta|varepsilon|theta|iota|kappa|vartheta|lambda|nu|pi|rho|tau|upsilon|varphi|phi|chi|psi|omega|Gamma|Delta|Theta|Lambda|Xi|Pi|Sigma|Upsilon|Phi|Psi|Omega)` "greek" iAm
+snippet `;(alef|xi|mu|alpha|sigma|rho|beta|gamma|delta|pi|zeta|eta|varepsilon|theta|iota|kappa|vartheta|lambda|nu|pi|rho|tau|upsilon|varphi|phi|chi|psi|omega|Gamma|Delta|Theta|Lambda|Xi|Pi|Sigma|Upsilon|Phi|Psi|Omega)` "greek" iAm
 \\``rv = m[1]``
 endsnippet
 
