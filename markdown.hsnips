@@ -240,6 +240,10 @@ snippet `;7` "\sigma" iAmm
 \sigma
 endsnippet
 
+snippet `;o ` "\varnothing" iAmm
+\varnothing 
+endsnippet
+
 snippet `;pp` "\partial" iAmm
 \partial
 endsnippet
