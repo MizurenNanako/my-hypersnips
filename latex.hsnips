@@ -134,11 +134,6 @@ endsnippet
 # ==== Dynamic Operation ====
 
 priority 100
-snippet `(\\?[a-zA-Z])vv ` "vector" iAm
-\vec{``rv = m[1]``}
-endsnippet
-
-priority 100
 snippet `(\\?[a-zA-Z]\w*({?\w*})?)(bf|BF)` "mathbf" iAm
 \mathbf{``rv = m[1]``}
 endsnippet
@@ -243,10 +238,6 @@ endsnippet
 
 snippet `;7` "\sigma" iAmm
 \sigma
-endsnippet
-
-snippet `;3` "\psi" iAmm
-\psi
 endsnippet
 
 snippet `;o ` "\varnothing" iAmm
@@ -808,56 +799,4 @@ snippet `;rvec([1-9]) ` "row vector" iiAm
 \\begin{bmatrix}``
     rv = gen_matrix(1, m[1]);
 ``\\end{bmatrix}$0
-endsnippet
-
-
-# == General ==
-
-snippet \box "Box"
-``rv = '┌' + '─'.repeat(t[0].length + 2) + '┐'``
-│ $1 │
-``rv = '└' + '─'.repeat(t[0].length + 2) + '┘'``
-endsnippet
-
-snippet `;style ` "create my style block" iA
-<style>
-    p{text-indent:2em;}
-    ruby{font-weight: bold;}
-    rt{font-size: smaller;}
-    @media print{.pagebreak{page-break-before:always;}}
-</style>
-endsnippet
-
-snippet `;ruby ` "create html ruby" iA
-<ruby>${1:${VISUAL}}<rt>$2</rt></ruby>${0}
-endsnippet
-
-snippet `;center ` "create html centered div" iA
-<div class=``rv = '"center"'``>
-	${1}
-</div>${0}
-endsnippet
-
-snippet `;quote ` "create html blockquote" wA
-<blockquote>
-
-${1:${VISUAL}}
-
-</blockquote>$0
-endsnippet
-
-snippet `;;` "create html tags" iA
-<$1>${2:${VISUAL}}</$1>$0
-endsnippet
-
-snippet `;center ` "create html centered div" wA
-<div class=``rv='"center"'``>
-
-${1:${VISUAL}}
-
-</div>${0}
-endsnippet
-
-snippet `;pb ` "pagebreak with html div" iA
-``rv='<div style="page-break-after: always;"></div>'``
 endsnippet
